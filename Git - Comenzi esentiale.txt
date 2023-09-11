@@ -1,0 +1,116 @@
+Comenzi esentiale:
+
+
+git config --global user.name "Petrescu Maria-Daiana"
+git config --global user.email petrescudaiana123@gmail.com
+git config --global core.editor "code --wait"
+git config --global -e
+git config --global core.autocrlf true
+git config --help
+
+
+git init
+git add file1.js
+git add file1.js file2.js
+git add *.js
+git add. //adauga tot din directorul curent
+
+
+git status
+git status -s
+
+
+git comit -m "Message"
+git comit
+
+
+git rm file1.js
+git rm --cached file1.js
+
+
+git mv file1.js file1.txt //redenumire sau mutare
+
+
+git log
+git log --oneline
+git log --reverse //commit-uri de la cele mai vechi la cele mai noi
+
+
+git show 921a2ff
+git show HEAD
+git show HEAD~2
+git show HEAD:file.js
+
+
+git log --stat //arata lista cu fisierele modificate 
+git log --patch
+
+
+git checkout dad47ed
+git checkout master
+
+
+git bisect start
+git bisect bad
+git bisect good ca49180
+git bisec reset
+
+
+git blame file.txt
+
+
+git tag v1.0
+git tag
+git tag -d v1.0
+
+
+git branch bugfix
+git switch bugfix
+git switch -C bugfix //creeaza si schimba
+git branch -d bugfix //sterg branch-ul
+
+
+git stash push -m
+git stash list
+git stash show stash@{1}  //shortcut pentru stash-ul respectiv
+git stash show 1
+git stash apply 1
+git stash drop 1 
+git stash clear
+
+
+git merge bugfix
+git merge --no-ff bugfix
+git merge --squash bugfix
+git merge --abort
+
+
+git rebase master
+
+
+git clone url
+
+
+git fetch origin master
+git fetch origin
+git fetch //shortcut 
+git pull
+git push origin master
+git push
+
+
+git remote
+git remote add upstream url
+git remote rm upstream
+
+
+git reset --soft HEAD^
+git reset --mixed HEAD^
+git reset --hard HEAD^
+
+
+git reflog
+git reflog show bugfix
+
+
+git commit --amend
